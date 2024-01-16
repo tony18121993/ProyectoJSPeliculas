@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Estilos cabecera */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-options {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon {
+    font-size: 50px; 
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.list-options {
+    display: flex;
+}
+.list-options p{
+    color: white;
+}
+
+.list-options select {
+    padding: 5px;
+    margin: 10px;
+}
+#buscar{
+    margin: 0 50px;
+    margin-top: 13px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+#sesion-out{
+    margin: 0 50px;
+    margin-top: 13px;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+/* Estilos main */
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1);
+}
+
+.tarjeta_imagen {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tarjeta_imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+p.precio {
+    font-size: 1.2em;
+    color: #e44d26;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton_detalle {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.boton_detalle:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.imagen_modal img {
+    max-width: 100%;
+    max-height: 400px; 
+    height: auto;
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.movie-details {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#boton-carrito {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#boton-carrito:hover {
+    background-color: #45a049;
+}
+
+/* Estilos footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/* Estilos tabla de compra */
+
+#carrito_Tabla{
+    display: none;
+    width: 90%;
+}
+#tabla {
+    margin: 20px;
+    padding-right: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tabla th, #tabla td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #tabla th {
+    background-color: #f2f2f2;
+  }
+  
+  #realizarPedido {
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #realizarPedido:hover {
+    background-color: #45a049;
+  }
+
+  #iconoCarga{
+    text-align: center;
+  }
+  .fa-solid{
+    font-size: 200px;
+    color: black;
+    
+  }

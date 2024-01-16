@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peliculas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="peliculas.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="peliculas.html" id="cabe">Listado de Películas</a></h1>
+      <div class="header-options">
+        <a href="#" class="cart-icon">🛒</a>
+        <div class="list-options">
+          <p>Generos</p>
+          <select id="filtrarPorGenero">
+            <option value="">Todos los géneros</option>
+          </select>
+
+          <p>Ordenar por</p>
+          <select id="ordenar">
+            <option value="asc">Menos Vistas</option>
+            <option value="des">Mas Vistas</option>
+          </select>
+          <button id="buscar">Buscar</button>
+          <button id="sesion-out">Cerrar Sesion</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="contenedor"></section>
+      <section id="carrito_Tabla">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>Nombre Película</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <button id="realizarPedido">Realizar Pedido</button>
+      </section>
+    </main>
+
+    <footer>
+      <h2>&copy;Antonio Hernandez 2024 Derechos Reservados</h2>
+    </footer>
+    <div id="modal" class="modal">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <div class="modal-content">
+        <div class="imagen_modal">
+          <img id="modal-imagen" alt="Imagen de la película" />
+        </div>
+        <div class="texto_modal">
+          <h2 id="modal-titulo"></h2>
+          <p id="modal-descripcion"></p>
+          <p id="modal-precio">2.99€</p>
+          <button id="boton-carrito">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="iconoCarga" style="display: none">
+      <i class="fa-solid fa-spinner fa-spin"></i>Cargando
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="peliculas.js"></script>
+  </body>
+</html>
